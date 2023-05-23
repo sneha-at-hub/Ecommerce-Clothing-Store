@@ -1,0 +1,617 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+#header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px 2px;
+    background-color:rgba(246, 235, 228, 0.858);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+    z-index: 999;
+    position:sticky;
+    top:0;
+}
+.section-p1{
+    padding: 40px 70px;
+    font-size: 20px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo{
+    width: 20% ;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 30px;
+    position:relative;
+}
+
+    
+#navbar li a{
+    text-decoration: none;
+    font-size:16 px;
+    font-weight: 600px;
+    color:black;
+    transition:0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:gray;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height:2px;
+    background:grey; 
+    position:absolute;
+    bottom: -4px;
+    left:20px;
+
+
+}
+#hero{
+    background-image:url(featured-image-2-1024x683.webp);
+    height:110vh;
+    width: 90%;
+    background-size: cover;
+    background-position: 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#hero h2{
+    font-size: 50px;
+
+}
+#hero button{
+    padding: 12px 40px;
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    font-size: 14px;
+    border-radius: 50px;
+    cursor:pointer;
+    font-weight:bold;
+    animation:animate 2s linear infinite;
+
+}
+
+#hero button:hover{
+    background-color:pink;
+    color:grey;
+}
+#product1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.pro-container{
+    display:flex;
+    justify-content:space-between;
+    padding-top: 23px;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+}
+
+
+#product1 .pro{
+    width: 250px;
+    min-width:100px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor:pointer;
+    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position:relative
+}
+
+#product1 .pro:hover{
+    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.15);
+}
+#product1 .pro img{
+    width:100%;
+    border-radius:20px;
+
+}
+
+
+
+#product1 .pro .des .hlo{
+    color:rgb(94, 90, 90);
+    font-size:12px;
+}
+#product1 .pro .des .h5{
+    padding-top:7px;
+    
+}
+.star{
+    font-size: 12px;
+    color: rgba(230, 165, 15, 0.67);
+}
+
+#newsletter{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-items: center;
+    background-image:url(pinky.jpeg);
+    background-repeat:no-repeat ;
+    background-position: 50% 50%;
+    background-color: rgb(255, 205, 214);
+
+}
+#newsletter p{
+    font: size 14px;
+    font-weight: 600;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+}
+#newsletter .form{
+    display:flex;
+    width:40%;
+}
+
+#newsletter input{
+    display:flex;
+    height:3.125 rem;
+    padding:0 1.25em;
+    font-size:14px;
+    width:100%;
+    border:1px solid transparent;
+    border-radius:4px;
+    outline:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    height:3.125rem;
+    padding:0 1.25em;
+    width:100%;
+    border:1px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    background-color:bisque;
+    font-size: 14px;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    animation:animate 2s linear infinite;
+
+
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+footer .col{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    margin-bottom:20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+footer .follow i{
+    color:grey;
+    cursor:pointer;
+
+
+}
+
+footer h4{
+    font-size:14px;
+    padding-bottom:20px;
+}
+
+footer p{
+    font-size:13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size:13px;
+    text-decoration:none;
+    color: black;
+    margin: 0 0 8px 0;
+}
+
+@media(max-width:799px) {
+    #navbar {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex start;
+        position:fixed;
+        top:0;
+        right:-3000px;
+        height:100vh;
+        width:300px;
+        background-color: antiquewhite;
+        box-shadow: 0 40px 60px;
+        padding:80px 0 10px;
+    }
+}
+
+#navbar li{
+  margin-bottom:25px;  
+}
+
+#mobile{
+    display:flex;
+    align-items:center;
+
+}
+#navbar .active{
+    right:0px;
+}
+
+
+#pagination {
+    text-align:center
+}
+
+#pagination a{
+    text-decoration:none;
+    background-color:antiquewhite;
+    padding: 15px 20px;
+    border-radius:4px;
+    color:black;
+    font-weight:600;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#prodetails .single-pro-image{
+    width:100%;
+    margin-right:50px;
+}
+.small-img-group{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.small-img-col{
+    flex-basis:24%;
+    cursor: pointer;
+
+}
+#prodetails{
+    display:flex;
+    margin: top 20pxl;
+}
+
+#prodetails .single-pro-details button{
+    background-color:antiquewhite;
+    color:black;
+    padding: 5px 40px;
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor:pointer;
+    font-weight:bold;
+    animation:animate 2s linear infinite;
+}
+
+#prodetails .single-pro-details span{
+    line-height:25px;
+}
+#blog{
+    padding:150px 150px 0 150px;
+
+}
+#blog .blog-box{
+    display:flex;
+    align-items:center;
+    width:100%;
+    flex-wrap: wrap;
+    position:relative;
+    padding-bottom:90px
+
+
+}
+
+#blog .blog-img{
+    width:50%;
+    margin-right:40px;
+}
+
+#blog img{
+    width:100%;
+    height:900px;
+    object-fit:cover;
+}
+
+#blog .blog-details{
+width:50%;
+
+}
+
+#blog .blog-details a{
+    text-decoration:none;
+    font-size:11px;
+    color:black;
+    font-weight:700;
+    font-family: 'Montserrat', sans-serif;
+    position:relative;
+    
+}
+
+#blog .blog-details a::after{
+    content:"";
+    width:50px;
+    height:1px;
+    background-color: black;
+    position:absolute;
+    top:4px;
+    right:-60px;
+}
+
+#blog .blog-details a:hover{
+    color:grey;
+    transition: 0.3em;
+}
+
+.par{
+    width:70%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive code for mobile devices */
+@media (max-width: 799px) {
+    #header {
+      padding: 10px 20px;
+    }
+  
+    .section-p1 {
+      padding: 20px;
+      font-size: 16px;
+    }
+  
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: -300px;
+      height: 100vh;
+      width: 300px;
+      background-color: antiquewhite;
+      box-shadow: 0 40px 60px;
+      padding: 80px 0 10px;
+      z-index: 999;
+      transition: left 0.3s ease;
+    }
+  
+    #navbar li {
+      margin-bottom: 15px;
+      padding: 0 15px;
+    }
+  
+    #navbar .active {
+      left: 0;
+    }
+  
+    #hero {
+      background-position: center;
+      padding: 0 20px;
+    }
+  
+    #hero h2 {
+      font-size: 36px;
+    }
+  
+    #hero button {
+      padding: 10px 30px;
+      font-size: 12px;
+    }
+  
+    #product1 .pro {
+      width: 100%;
+      min-width: 100px;
+    }
+  
+    #product1 .pro-container {
+      padding-top: 15px;
+    }
+  
+    #newsletter {
+      background-position: center;
+      background-size: cover;
+      padding: 40px 20px;
+    }
+  
+    #newsletter .form {
+      width: 100%;
+    }
+  
+    #newsletter input,
+    #newsletter button {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+  
+    #prodetails {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    #prodetails .single-pro-image {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    #prodetails .single-pro-details button {
+      padding: 5px 20px;
+      font-size: 12px;
+    }
+  
+    #blog {
+      padding: 50px 20px 0;
+    }
+  
+    #blog .blog-box {
+      padding-bottom: 30px;
+    }
+  
+    #blog .blog-img {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    #blog img {
+      height: auto;
+    }
+  
+    #blog .blog-details {
+      width: 100%;
+    }
+  }
+  
+
+/* Responsive code for mobile devices */
+@media (max-width: 799px) {
+  #header {
+    padding: 10px 20px;
+  }
+
+  .section-p1 {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: antiquewhite;
+    box-shadow: 0 40px 60px;
+    padding: 80px 0 10px;
+    z-index: 999;
+    transition: left 0.3s ease;
+  }
+
+  #navbar li {
+    margin-bottom: 15px;
+    padding: 0 15px;
+  }
+
+  #navbar .active {
+    left: 0;
+  }
+
+  #hero {
+    background-position: center;
+    padding: 0 20px;
+  }
+
+  #hero h2 {
+    font-size: 36px;
+  }
+
+  #hero button {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+
+  #product1 .pro {
+    width: 100%;
+    min-width: 100px;
+  }
+
+  #product1 .pro-container {
+    padding-top: 15px;
+  }
+
+  #newsletter {
+    background-position: center;
+    background-size: cover;
+    padding: 40px 20px;
+  }
+
+  #newsletter .form {
+    width: 100%;
+  }
+
+  #newsletter input,
+  #newsletter button {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  #prodetails {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #prodetails .single-pro-details button {
+    padding: 5px 20px;
+    font-size: 12px;
+  }
+
+  #blog {
+    padding: 50px 20px 0;
+  }
+
+  #blog .blog-box {
+    padding-bottom: 30px;
+  }
+
+  #blog .blog-img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #blog img {
+    height: auto;
+  }
+
+  #blog .blog-details {
+    width: 100%;
+  }
+}
+
+
