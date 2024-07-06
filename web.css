@@ -1,29 +1,45 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;,0,600;1,100;1,200&display=swap');
 
-#header{
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    padding: 10px 2px;
-    background-color:rgba(246, 235, 228, 0.858);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
-    z-index: 999;
-    position:sticky;
-    top:0;
-}
-.section-p1{
-    padding: 40px 70px;
-    font-size: 20px;
-}
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 
-#navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 
 }
+body{
+  background-color: #fcf5f5;
+}
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #FBEEE7;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  width: 100%; /* Ensure header spans the entire width */
+  box-sizing: border-box; 
+}
+
+.section-p1 {
+  padding: 40px 70px;
+  font-size: 20px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure navbar spans the entire width */
+  box-sizing: border-box; 
+}
+
 
 .logo{
     width: 20% ;
@@ -66,9 +82,9 @@
 
 }
 #hero{
-    background-image:url(featured-image-2-1024x683.webp);
-    height:110vh;
-    width: 90%;
+    background-image:url(vecteezy_full-street-fashion-slender-figure-beautiful-face-graceful_11911000.jpg);
+    height:80vh;
+    width: 89%;
     background-size: cover;
     background-position: 25% right 0;
     padding: 0 80px;
@@ -81,24 +97,36 @@
 
 #hero h2{
     font-size: 50px;
+    font-family: 200px;
+    margin-left: 600px;
 
 }
 #hero button{
     padding: 12px 40px;
     border:none;
     font-family: 'Montserrat', sans-serif;
-    background-color: white;
+    background-color: #81492b;
     font-size: 14px;
     border-radius: 50px;
     cursor:pointer;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
     font-weight:bold;
+    position: relative; 
     animation:animate 2s linear infinite;
+    margin-left: 600px;
 
+
+}
+.pro button i {
+  margin-left: 100px; /* Space between text and icon */
 }
 
 #hero button:hover{
-    background-color:pink;
-    color:grey;
+    background-color:color rgb(102, 102, 102);
+    color:rgb(201, 201, 201);
 }
 #product1{
     text-align: center;
@@ -123,15 +151,17 @@
     padding: 10px 12px;
     border: 1px solid #cce7d0;
     border-radius: 25px;
+    background-color: #ffffff;
     cursor:pointer;
-    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.02);
+    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.09);
     margin: 15px 0;
     transition: 0.2s ease;
     position:relative
 }
 
 #product1 .pro:hover{
-    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.15);
+  padding: 20px 15px;
+    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.30);
 }
 #product1 .pro img{
     width:100%;
@@ -139,6 +169,55 @@
 
 }
 
+/* web.css */
+
+/* About Us Section */
+#about {
+  padding: 50px 0;
+
+  text-align: center;
+}
+
+.aboutus {
+ 
+  margin: 0 auto;
+  padding: 30px;
+
+  border-radius: 12px;
+ 
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.aboutus img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.par {
+  flex: 1; /* Grow to fill remaining space */
+  padding-left: 30px; /* Add space between image and paragraphs */
+}
+
+.par p {
+  line-height: 1.8;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.par p:last-child {
+  margin-bottom: 0;
+}
+
+.aboutus h4 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
 
 
 #product1 .pro .des .hlo{
@@ -159,6 +238,7 @@
     justify-content: space-between;
     flex-wrap:wrap;
     align-items: center;
+    padding: 20px;
     background-image:url(pinky.jpeg);
     background-repeat:no-repeat ;
     background-position: 50% 50%;
@@ -188,6 +268,10 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
+#pagination{
+  margin-top: 20;
+  margin-bottom: 100px;
+}
 #newsletter button{
     height:3.125rem;
     padding:0 1.25em;
@@ -208,6 +292,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #FBEEE7;
 
 }
 footer .col{
@@ -427,6 +512,7 @@ width:50%;
   
     #hero h2 {
       font-size: 36px;
+      margin-left: 300px;
     }
   
     #hero button {
@@ -535,7 +621,7 @@ width:50%;
   }
 
   #hero {
-    background-position: center;
+    background-position:22%;
     padding: 0 20px;
   }
 
